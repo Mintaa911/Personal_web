@@ -8,15 +8,38 @@
 <body text="white" background="images/solid_bg/1920x1080-black-leather-jacket-solid-color-background.jpg">
     <header align="center">
         <h1>HELLO I'M MINTESNOT BEZABHI</h1>
+        <nav>
+            <table  background="images/solid_bg/1920x1080-alice-blue-solid-color-background.jpg" cellspacing="20px">
+                <tr>
+                    <td>
+                        <a href="index.html#about">About</a>
+                    </td>
+                    <td>
+                        <a href="index.html#moment">Memories</a>
+                    </td>
+                    <td>
+                        <a href="index.html#hobbies">Hobbies</a>
+                    </td>
+                    <td>
+                        <a href="index.html#education">Education & Skill</a>
+                    </td>
+                    <td>
+                        <a href="index.html#contact">Contact</a>
+                    </td>
+                </tr>
+            </table>
+            
+        </nav>
     </header>
     <hr>
-    <section>
+    <section id="about">
         <table align="center">
             <tr>
                 <td>
                    <table width="500" height="500" cellspacing="10px" background="images/solid_bg/1920x1080-orange-color-wheel-solid-color-background.jpg">
                        <tr>
                            <td>
+                               <h2 align="center">ABOUT</h2>
                             <p>
                                 I'm Mintesnot Bezabhi. I live in Ethiopia, one of the uncolnised 
                                 country in the world. I'm 21 years old. I'm a Software Engineering
@@ -48,12 +71,13 @@
         </table>
     </section>
     <hr>
-    <section>
+    <section id="moment">
         <tabel align="center">
             <tr>
                 <td>
-                    <h2>Unforgetable Moments</h2>
-                    <p>The best moments in my life, that is unforgetable for the rest of my life.</p>
+                    <h2>UNFORGETABLE MOMENTS</h2>
+                    <em>The best moments in my life, that are unforgetable for the rest of my life</em>
+                    
                 </td>
             </tr>
         </tabel>
@@ -79,12 +103,12 @@
     
         <div align="center">
             <span>Let's find more memories</span><br>
-            <a href="moments.html" title="more amazing moments">more</a>
+            <a href="moments.html#education" title="more amazing moments">more</a>
         </div>
         
     </section>
     <hr>
-    <section>
+    <section id="hobbies">
         <table align="center">
             <tr>
                 <td>
@@ -96,7 +120,7 @@
                         <tr>
                             
                             <td>
-                                <h2>Hobbies and Interest</h2>
+                                <h2 align="center">HOBBIES AND INTERESTS</h2>
                                 <ul>
                                     <li>Sport: I like to watch and play
                                         <ul>
@@ -129,7 +153,7 @@
         </table>
     </section>
     <hr>
-    <section>
+    <section id="education">
         <h2 align="center">EDUCATION AND SKILLS</h2>
         <table align="center" cellspacing="20px" >
            
@@ -206,6 +230,97 @@
          </table>
     </section>
     <hr>
+    <section id="contact" border="1">
+        <table align="center" width="800" height="500" cellspacing="10px" background="images/solid_bg/1920x1080-orange-color-wheel-solid-color-background.jpg">
+            <tr>
+                <td>
+                    <h3 align="center" >Leave Your Comment Here</h3>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <table cellspacing="10">
+                                        <tr >
+                                            <td>
+                                                <label for="fName">First Name</label>
+                                            </td>
+                                            <td>
+                                              <input type="text" name="fName" id="fName" required pattern="[A-Za-z].{1,}">  
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="lName">Last Name</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" name="lName" id="lName" required pattern="[A-Za-z].{1,}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="email">E-mail</label>
+                                            </td>
+                                            <td>
+                                                <input type="email" name="email" id="email" required pattern="[a-zA-Z0-9.-+*/]+@[a-z0-9.-]+\.[a-z]{2,}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="password">Password</label>
+                                            </td>
+                                            <td>
+                                                <input type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="phone">Phone Number</label>
+                                            </td>
+                                            <td>
+                                                <input type="tel" name="phone" id="phone" required pattern="251+[0-9]{9}">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="country">Country</label>
+                                            </td>
+                                            <td>
+                                                <select name="country" id="country">
+                                                    <option value="Ethiopia">Ethiopia</option>
+                                                    <option value="USA">USA</option>
+                                                </select>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                                <td></td>
+                                            <td>
+                                                <label for="suggestion">Suggestion</label><br>
+                                                <textarea name="suggestion" id="suggestion" cols="60" rows="8"></textarea>
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <input type="submit" value="Submit">
+                                            </td>
+                                            
+                                        </tr>
+                                       
+                                           
+                                    </table>
+                                </td>
+                               
+                            </tr>
+                        </table>
+                        
+                    </form>
+            
+                </td>
+            </tr>
+        </table>
+     
         
 </body>
 </html>
