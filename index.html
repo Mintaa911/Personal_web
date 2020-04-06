@@ -1,82 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>MINTESNOT</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo.png">
-    <title>MINTESNOT</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/dec944d78f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/mycss.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    
 </head>
 <body text="white" background="images/1920x1080-black-leather-jacket-solid-color-background.jpg">
-    <header align="center">
-        <h1>HELLO I'M MINTESNOT BEZABHI</h1>
-        <nav>
-            <table  background="images/1920x1080-alice-blue-solid-color-background.jpg" cellspacing="20px">
-                <tr>
-                    <td>
-                        <a href="index.html#about">About</a>
-                    </td>
-                    <td>
-                        <a href="index.html#moment">Memories</a>
-                    </td>
-                    <td>
-                        <a href="index.html#hobbies">Hobbies</a>
-                    </td>
-                    <td>
-                        <a href="index.html#education">Education & Skill</a>
-                    </td>
-                    <td>
-                        <a href="index.html#contact">Contact</a>
-                    </td>
-                </tr>
-            </table>
-            
-        </nav>
-    </header>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+              <span class="navbar-toggler-icon"></span>
+        
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="colNav">
+            <ul class="navbar-nav" id="menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#memory">Memories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#hobby">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#education">Education & Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
     <hr>
-    <section id="about">
-        <table align="center">
-            <tr>
-                <td>
-                   <table width="660" height="500" cellspacing="10px" background="images/1920x1080-orange-color-wheel-solid-color-background.jpg">
-                       <tr>
-                           <td>
-                               <h2 align="center">ABOUT</h2>
-                            <p>
-                                I'm Mintesnot Bezabhi. I live in Ethiopia, one of the uncolnised 
-                                country in the world. I'm 21 years old. I'm a Software Engineering
-                                I was born from my father Bezabhi Lemu and my mother Almaz Gero. 
-                                I have two brothers Yilkal and Yididiya. I love my family a lot. 
-                                student in Addis Ababa Insitute of Technology (AAIT).
-                            </p>
-                            <p>
-                                Addis Ababa is the best univerity in our country. I'm lucky to 
-                                be a student in this univerity. Software Engineering is one of 
-                                the most wanted field of study in college. These is because the
-                                world is in the era of technology. So, tech people are needed 
-                                for work in this amazing world.
-                            </p>
-                            <p>
-                                I love programming. It has been part of my daily routine. programming 
-                                is a very intersting thing to spent time on. It is fun when tring to 
-                                solve problems, the moment you solved the problem there is amazing 
-                                feeling that you feel.
-                            </p>
-                           </td>
-                       </tr>
-                   </table>
-                </td>
-                <td>
-                    <img width="660"  height="500" src="images/myself.jpg" alt="profile picture">
-                </td>
-            </tr>
-        </table>
-    </section>
+   
+    <div id="about">
+        <div id="greet">hi, i'm mitesnot bezabhi.</div>
+        <div id="content">
+            <img src="images/myself.jpg" alt="profile picture">
+
+            <div>
+                <p>
+                    I'm Mintesnot Bezabhi. I live in Ethiopia, one of the uncolnised 
+                    country in the world. I'm 21 years old. I'm a Software Engineering
+                    I was born from my father Bezabhi Lemu and my mother Almaz Gero. 
+                    I have two brothers Yilkal and Yididiya. I love my family a lot. 
+                    student in Addis Ababa Insitute of Technology (AAIT).
+                </p>
+                <p>
+                    Addis Ababa is the best univerity in our country. I'm lucky to 
+                    be a student in this univerity. Software Engineering is one of 
+                    the most wanted field of study in college. These is because the
+                    world is in the era of technology. So, tech people are needed 
+                    for work in this amazing world.
+                </p>
+                <p>
+                    I love programming. It has been part of my daily routine. programming 
+                    is a very intersting thing to spent time on. It is fun when tring to 
+                    solve problems, the moment you solved the problem there is amazing 
+                    feeling that you feel.
+                </p>
+            </div>  
+        </div>
+        
+    </div>
+             
     <hr>
     <section id="moment">
         <tabel align="center">
             <tr>
                 <td>
                     <h2>UNFORGETABLE MOMENTS</h2>
+                    <div class="hor_bar"></div>
                     <em>The best moments in my life, that are unforgetable for the rest of my life</em>
                     
                 </td>
@@ -344,5 +353,13 @@
                mintesnotbezabhi99@gmail.com
             </em>
         </footer>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
