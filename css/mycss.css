@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'EB Garamond', serif;
+}
+
+/*navigation */
 #menu a{
     font-weight: bold;
     text-transform: uppercase;
@@ -17,6 +26,9 @@
 #menu a:hover{
     color:lightgray;
 }
+
+
+/* about */
 #bg{
     position: relative;
     width: 100%;
@@ -59,7 +71,7 @@
 #content{
     background-color: rgb(250, 122, 3);
     padding-top: 10%;
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     display: flex;
     flex-direction: column;    
 }
@@ -69,11 +81,11 @@
     box-sizing: border-box;
     border-radius: 50%;
     align-self: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 #content>div{
     text-align: justify;
-    padding: 10%;
+    padding: 5% 10%;
 }
 #content>div>p a:link{
     color: white;
@@ -84,17 +96,19 @@
 #content>div>p a:visited{
     color: white;
 }
+
+/* unforgetable moments */
 #memory{
     background-color: rgb(7, 6, 6);
     margin: 0;
     color: whitesmoke;
-    font-family: 'EB Garamond', serif;
+    /* font-family: 'EB Garamond', serif; */
     display: flex;
     flex-direction: column;
     padding: 20px 0px;
 }
 .title{
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-align: center;
 }
 .hor_bar{
@@ -102,13 +116,13 @@
     width: 50px;
     margin: auto;
 }
-#moment img{
-    max-width: auto;
-    max-width: 100%;
-}
 .description{
     margin-top: 5%;
     text-align: center;
+}
+#moment img{
+    max-width: auto;
+    max-width: 100%;
 }
 #link{
     border: 2px solid white;
@@ -123,9 +137,45 @@
     max-width: 100px;
     box-sizing: border-box;
     color: whitesmoke;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 #link>a:hover{
     color: black;
     background-color: whitesmoke;
+}
+/* hobbies */
+#hobby>div{  
+    background-color:black;
+    /* padding-left: 5%; */
+}
+#hobby div h2{
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-align: center;
+}
+#hobby div ul{
+    margin-left: 20%;
+}
+#hobby div ul li{
+    text-align: left;
+
+}
+.card{
+    margin: 2%;
+    color: black;
+}
+.card-title{
+    text-transform: capitalize;
+    
+}
+.card-text{
+    text-align: justify;
+    margin-bottom: 5%;
+}
+
+.card-text li{
+    text-transform: capitalize;
+}
+.btn{
+    text-transform: capitalize;
 }
