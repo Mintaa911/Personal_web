@@ -4,13 +4,14 @@
 }
 body{
     font-family: 'EB Garamond', serif;
+    
 }
 
 /*navigation */
 #menu a{
     font-weight: bold;
     text-transform: uppercase;
-    font-size:0.8rem;
+    font-size:1.2rem;
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -44,7 +45,7 @@ body{
     width: 100%;
     height: 100%;   
     box-sizing: border-box;
-    background-image: url(../images/bg_ethio.jpg);
+    background-image: url(../images/ethio_nile.jpg);
     background-size: cover;
     /* opacity: 0.7; */
 }
@@ -54,8 +55,8 @@ body{
     text-transform: uppercase;
     font-size: 3.2rem;
     text-align: center;
-    font-family: 'EB Garamond', serif;
     margin: 0;
+    
 }
 #greet::before{
     content: "";
@@ -86,9 +87,11 @@ body{
 #content>div{
     text-align: justify;
     padding: 5% 10%;
+    color: white;
 }
 #content>div>p a:link{
-    color: white;
+    border-bottom: 2px solid white;
+    text-decoration: none;
 }
 #content>div>p a:hover{
     color: green;
@@ -97,6 +100,16 @@ body{
     color: white;
 }
 
+/* title */
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+.hor_bar{
+    border-bottom: 5px solid rgb(20, 248, 70);
+    width: 60px;
+    margin: auto;
+}
 /* unforgetable moments */
 #memory{
     background-color: rgb(7, 6, 6);
@@ -107,18 +120,11 @@ body{
     flex-direction: column;
     padding: 20px 0px;
 }
-.title{
-    text-transform: uppercase;
-    text-align: center;
-}
-.hor_bar{
-    border-bottom: 3px solid white;
-    width: 50px;
-    margin: auto;
-}
+
 .description{
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: center;
+    font-size: 1.3rem;
 }
 #moment img{
     max-width: auto;
@@ -145,13 +151,14 @@ body{
 }
 /* hobbies */
 #hobby>div{  
-    background-color:black;
-    /* padding-left: 5%; */
+    
+    padding-bottom: 3%
 }
 #hobby div h2{
     text-transform: uppercase;
-    color: whitesmoke;
+    color: black;
     text-align: center;
+    padding-top: 2%;
 }
 #hobby div ul{
     margin-left: 20%;
@@ -171,6 +178,7 @@ body{
 .card-text{
     text-align: justify;
     margin-bottom: 5%;
+    font-size: 1.2rem;
 }
 
 .card-text li{
@@ -178,4 +186,127 @@ body{
 }
 .btn{
     text-transform: capitalize;
+}
+/* contact */
+#contact{
+    font-size: 1.4rem;
+    padding: 2%;
+    background-color: rgb(250, 122, 3);
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    background-color: white;
+    font-size: 1.2rem;
+}
+footer>div>a:hover{
+    position: relative;
+    bottom: 10px;
+}
+footer>div>a>img{
+    width: 50px;
+    height: 50px;
+}
+footer>div>span{
+    padding: 5px;
+}
+footer>div:last-child{
+    margin-top: 3%;
+}
+footer>div:last-child>p{
+    margin: 0;
+    padding: 0;
+}
+footer>div:last-child>p:nth-child(1){
+    padding-left: 15%;
+}
+footer>div:last-child>p>a{
+    text-decoration: none;
+}
+
+/* large screens */
+@media(min-width: 768px){
+    
+    #bg{
+        position: relative;
+        width: 100%;
+        height: 600px;
+        
+    }
+    #bg::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;   
+        box-sizing: border-box;
+        background-image: url(../images/ethio_nile.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        /* opacity: 0.7; */
+    }
+    #greet{
+        position: relative;
+        color: whitesmoke;
+        text-transform: uppercase;
+        font-size: 5rem;
+        text-align: center;    
+        padding-top: 12%;
+    }
+    #greet::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0;
+        min-width: 100%;
+        min-height: 12em;
+        z-index: -1;
+        opacity: 0.2;
+        background-color: #171d24;
+    }
+
+
+    #content{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+    #content>img{
+        order: 2;
+        flex: 1;
+        height: auto;
+        border-radius: 0;
+        margin: 0;
+       
+    }
+    #content>div{
+        order: 1;
+        flex: 1;
+        font-size: 1.4rem;
+        text-align: justify;
+        padding: 5% 5% 0% 5%;
+    }
+
+    #moment img{
+        width: 600px;
+        height: 400px;
+    }
+    #hobby{
+        padding-left: 8%;
+    }
+    #moment-page{
+        font-size: 1.4rem;
+        background-color: rgb(75, 153, 243);
+        padding:2% 0% 2% 5%;
+    }
 }
