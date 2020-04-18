@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/dec944d78f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/mycss.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     
 </head>
 <body>
-
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,9 +34,6 @@
                     <a class="nav-link"  href="#hobby">Hobbies</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  href="#education">Education & Skill</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link"  href="#blog">Blog</a>
                 </li>
                 <li class="nav-item">
@@ -47,7 +44,7 @@
     </nav>
     <section id="about">
         <div id="bg">
-           <div id="greet">hi, i'm mitesnot bezabhi.</div> 
+           <div id="greet">hi, i'm mintesnot bezabhi.</div> 
         </div>
         <div id="content">
             <img src="images/myself.jpg" alt="profile picture">
@@ -137,15 +134,18 @@
         </div>
 
         <div id="link">
-            <a href="moments.html" target="_blank">click for more</a>
+            <a href="moments.html">click for more</a>
         </div>
     </section>
        
     
     <section id="hobby">
-        <div>
-            <h2>hobbies and interest</h2>
-            <div class="hor_bar"></div>
+        
+            <div class="title">
+                <h2>hobbies and interest</h2>
+                <div class="hor_bar"></div>
+            </div>
+            
             <div class="row text-center" >
                 <div class ="col-md-4 card-deck">
                     <div class="card">
@@ -218,10 +218,80 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
+        
     </section>
+
+    <section id="contact">   
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">
+                    <h2>contact</h2>
+                    <div class="hor_bar"></div>
+                </div>
+                <p>
+                    If you have any comments or suggestion you can use the form on the right side. 
+                    Feel free to ask or give suggestion on the website. If you like to meet in person first email 
+                    me using email address found in the bottom of the webpage.
+                </p>
+            </div>
+    
+                
+            <form class="col-md-6">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input class="form-control" type="text" name="fname" placeholder="Enter first name" required pattern="[A-Za-z].{1,}">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input class="form-control" type="text" name="lname" placeholder="Enter last name" required pattern="251+[0-9]{9}">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="mail" required pattern="[a-zA-Z0-9.-+*/]+@[a-z0-9.-]+\.[a-z]{2,}">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input class="form-control" type="number" name="phone" id="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select class="form-control" name="country" id="country">
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Suggestion:</label>
+                    <textarea class="form-control" name="suggestion" id="suggest" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+    
+    
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <a href="index.html#about">
+                <img src="images/up.png" alt="return to top">
+            </a>
+        </div>
+        <div>
+            <span><i class="fas fa-phone-alt"></i></span>
+            <span>(+251) 92431-6299</span>
+        </div>
+        <div>
+            <span><i class="far fa-envelope"></i></span>
+            <span>mintesnotbezabhi99@gmail.com</span>
+        </div>
+        <div>
+            <p>@copy 2020 Mintesnot Bezabhi</p>
+            <p>
+                This is version 2 of my personal website  .<a href="https://mintaa911.github.io/Assignment3/" target="_blank" rel="noopener noreferrer">V1</a>
+            </p>
+        </div>
+    </footer>
 
 
 <!-- jQuery library -->
