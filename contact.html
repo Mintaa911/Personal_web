@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/dec944d78f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mycss.css">
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-4 ">
+       
+        <a id ="home" href="index.html">
+            <h3>Mintesnot <span class="font-weight-bold">Bezabhi</span></h3>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+    
+        </button>
+  
+<div class="collapse navbar-collapse " id="colNav">
+            <ul class="navbar-nav ml-auto" id="menu">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link  dropdown-toggle" href="about.html" data-toggle="dropdown"> 
+                        <i class="fas fa-user mx-2"></i></i>About  
+                    </a>
+                     <ul class="dropdown-menu">
+                         <li><a class="dropdown-item pr-5" href="about_me.html">
+                            <i class="fas fa-clock mx-2"></i></i>About me</a>
+                        </li>
+                        
+                     </ul>
+                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " href="channel.html"> 
+                        <i class="fas fa-podcast mx-2"></i>channel  
+                    </a>
+                    
+                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="moments.html">
+                        <i class="fas fa-images mx-2"></i>  Gallery  
+                    </a>
+                 </li>
+                
+                 
+                 <li class="nav-item ">
+                    <a class="nav-link"  href="contact.html">
+                        <i class="far fa-address-card mx-2"></i>Contact
+                    </a>
+                </li>
+            </ul>
+            <div class=" d-md-inline">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" >
+                    <i class="icon fab fa-linkedin mx-3"></i>
+                </a>
+                <a href="https://telegram.me/@MINtaa911"  target="blank">
+                    <i class="icon fab fa-telegram mx-3"></i>
+                </a>
+                <a href="https://twitter.com/share?url=homepage" target="_blank">
+                    <i class="icon fab fa-twitter mx-3"></i>
+                </a>             
+            </div>
+            
+        </div>
+    </nav>
+
+
+    <section id="contact">   
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">
+                    <h2>contact</h2>
+               
+                </div>
+                <p>
+                    If you have any comments or suggestion you can use the form on the right side. 
+                    Feel free to ask or give suggestion on the website. If you like to meet in person first email 
+                    me using email address found in the bottom of the webpage.
+                </p>
+            </div>
+    
+                
+            <form class="col-md-6">
+                <div class="form-group">
+                    <label for="fname">First Name:</label>
+                    <input class="form-control" type="text" name="fname" placeholder="Enter first name" required pattern="[A-Za-z].{1,}">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input class="form-control" type="text" name="lname" placeholder="Enter last name" required pattern="251+[0-9]{9}">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="mail" required pattern="[a-zA-Z0-9.-+*/]+@[a-z0-9.-]+\.[a-z]{2,}">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input class="form-control" type="number" name="phone" id="number" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select class="form-control" name="country" id="country">
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="USA">USA</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="suggestion">Suggestion:</label>
+                    <textarea class="form-control" name="suggestion" id="suggest" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+    
+    
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <footer>  
+        <div class="footer_top container">
+            <p>Subscribe to my newsletter</p>
+            <form class="mt-4 " >
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-2">
+                    <div class="mx-2">
+                      <button class="btn btn-primary" type="button">subscribe</button>
+                    </div>
+                    
+                  </div>
+            </form>
+            <p>Unsubscribe at any time, it won’t even hurt my feelings because I have none.</p>
+        </div>   
+
+       <div class="footer_bottom row">
+            <div class="col-lg-3 col-6 copyright"> &copy; Mintesnot Bezabhi 2021</div>
+            <div class="col-lg-9 col-6">              
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" class="mx-4"><i class="fab fa-linkedin fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://twitter.com/share?url=homepage" target="_blank" class="mx-4"><i class="fab fa-twitter fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://telegram.me/@MINtaa911" target="_blank" class="mx-4"><i class="fab fa-telegram fa-2x" style="color:white !important;"></i></a>   
+            </div>  
+        </div>
+          
+    </footer>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
