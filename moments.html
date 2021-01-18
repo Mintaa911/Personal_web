@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mintesnot B.</title>
+    <title>gallery</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -14,6 +14,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- navigation bar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light py-4 ">
+       
+        <a id ="home" href="index.html">
+            <h3>Mintesnot <span class="font-weight-bold">Bezabhi</span></h3>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+    
+        </button>
+  
+<div class="collapse navbar-collapse " id="colNav">
+            <ul class="navbar-nav ml-auto" id="menu">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link  dropdown-toggle" href="about.html" data-toggle="dropdown"> 
+                        <i class="fas fa-user mx-2"></i></i>About  
+                    </a>
+                     <ul class="dropdown-menu">
+                         <li><a class="dropdown-item pr-5" href="about_me.html">
+                            <i class="fas fa-clock mx-2"></i></i>About me</a>
+                        </li>
+                        
+                     </ul>
+                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " href="channel.html"> 
+                        <i class="fas fa-podcast mx-2"></i>channel  
+                    </a>
+                    
+                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="moments.html">
+                        <i class="fas fa-images mx-2"></i>  Gallery  
+                    </a>
+                 </li>
+                
+                 
+                 <li class="nav-item ">
+                    <a class="nav-link"  href="contact.html">
+                        <i class="far fa-address-card mx-2"></i>Contact
+                    </a>
+                </li>
+            </ul>
+            <div class=" d-md-inline">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" >
+                    <i class="icon fab fa-linkedin mx-3"></i>
+                </a>
+                <a href="https://telegram.me/@MINtaa911"  target="blank">
+                    <i class="icon fab fa-telegram mx-3"></i>
+                </a>
+                <a href="https://twitter.com/share?url=homepage" target="_blank">
+                    <i class="icon fab fa-twitter mx-3"></i>
+                </a>             
+            </div>
+            
+        </div>
+    </nav>
+
+
     <div id="moment-page">
         <div class="row text-center" >
             <div class ="col-md-4 card-deck">
@@ -167,26 +228,30 @@
     </div>
 
     
-   <footer>
-        <div>
-            <a href="index.html#about">
-                <img src="images/up.png" alt="return to top">
-            </a>
+  <footer>  
+        <div class="footer_top container">
+            <p>Subscribe to my newsletter</p>
+            <form class="mt-4 " >
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-2">
+                    <div class="mx-2">
+                      <button class="btn btn-primary" type="button">subscribe</button>
+                    </div>
+                    
+                  </div>
+            </form>
+            <p>Unsubscribe at any time, it won’t even hurt my feelings because I have none.</p>
+        </div>   
+
+        <div class="footer_bottom row">
+            <div class="col-lg-3 col-6 copyright"> &copy; Mintesnot Bezabhi 2021</div>
+            <div class="col-lg-9 col-6">              
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" class="mx-4"><i class="fab fa-linkedin fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://twitter.com/share?url=homepage" target="_blank" class="mx-4"><i class="fab fa-twitter fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://telegram.me/@MINtaa911" target="_blank" class="mx-4"><i class="fab fa-telegram fa-2x" style="color:white !important;"></i></a>   
+            </div>  
         </div>
-        <div>
-            <span><i class="fas fa-phone-alt"></i></span>
-            <span>(+251) 92431-6299</span>
-        </div>
-        <div>
-            <span><i class="far fa-envelope"></i></span>
-            <span>mintesnotbezabhi99@gmail.com</span>
-        </div>
-        <div>
-            <p>@copy 2020 Mintesnot Bezabhi</p>
-            <p>
-                This is version 2 of my personal website  .<a href="https://mintaa911.github.io/Assignment3/" target="_blank" rel="noopener noreferrer">V1</a>
-            </p>
-        </div>
+          
     </footer>
 
 
