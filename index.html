@@ -3,83 +3,101 @@
 <head>
     <title>MINTESNOT</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
     <link rel="icon" type="image/png" href="images/logo.png">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/dec944d78f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/mycss.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mycss.css">
     
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-              <span class="navbar-toggler-icon"></span>
-        
-            </button>
-        </div>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light py-4 ">
+       
+        <a id ="home" href="index.html">
+            <h3>Mintesnot <span class="font-weight-bold">Bezabhi</span></h3>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#colNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
-        <div class="collapse navbar-collapse" id="colNav">
-            <ul class="navbar-nav" id="menu">
+            <span class="navbar-toggler-icon"></span>
+    
+        </button>
+  
+
+        <div class="collapse navbar-collapse " id="colNav">
+            <ul class="navbar-nav ml-auto" id="menu">
+                <li class="nav-item dropdown ">
+                    <a href="about.html" class="nav-link  dropdown-toggle"> 
+                        <i class="fas fa-user mx-2"></i>About</a>
+                     <ul class="dropdown-menu">
+                         <li><a class="dropdown-item pr-5" href="about_me.html">
+                            <i class="fas fa-clock mx-2"></i>What I'm Doing Now</a>
+                        </li>
+                        
+                     </ul>
+                 </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " href="channel.html"> 
+                        <i class="fas fa-podcast mx-2"></i>channel  
+                    </a>
+                    
+                 </li>
+
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  href="#memory">Memories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  href="#hobby">Hobbies</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"  href="#contact">Contact</a>
+                    <a class="nav-link" href="moments.html">
+                        <i class="fas fa-images mx-2"></i>  Gallery  
+                    </a>
+                 </li>
+                
+                 
+                 <li class="nav-item ">
+                    <a class="nav-link"  href="contact.html">
+                        <i class="far fa-address-card mx-2"></i>Contact
+                    </a>
                 </li>
             </ul>
+            <div class=" d-md-inline">
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" >
+                    <i class="icon fab fa-linkedin mx-3"></i>
+                </a>
+                <a href="https://telegram.me/@MINtaa911"  target="blank">
+                    <i class="icon fab fa-telegram mx-3"></i>
+                </a>
+                <a href="https://twitter.com/share?url=homepage" target="_blank">
+                    <i class="icon fab fa-twitter mx-3"></i>
+                </a>             
+            </div>
+            
         </div>
     </nav>
-    <section id="about">
-        <div id="bg">
-           <div id="greet">hi, i'm mintesnot bezabhi.</div> 
-        </div>
-        <div id="content">
-            <img src="images/myself.jpg" alt="profile picture">
-            <div>
-                <p>
-                    I'm Mintesnot Bezabhi. I live in Ethiopia, one of the uncolnised 
-                    country in the world. I'm 21 years old. I'm a Software Engineering
-                    I was born from my father Bezabhi Lemu and my mother Almaz Gero. 
-                    I have two brothers Yilkal and Yididiya. I love my family a lot. 
-                    student in <a href="http://www.aau.edu.et/aait/" target="_blank">Addis Ababa Insitute of Technology (AAIT)</a>. 
-                </p>
-                <p>
-                    <a href="http://www.aau.edu.et/aait/" target="_blank">AAIT</a>  is the best univerity in our country. I'm lucky to 
-                    be a student in this univerity. Software Engineering is one of 
-                    the most wanted field of study in college. These is because the
-                    world is in the era of technology. So, tech people are needed 
-                    for work in this amazing world.
-                </p>
-                <p>
-                    I love programming. It has been part of my daily routine. programming 
-                    is a very intersting thing to spent time on. It is fun when tring to 
-                    solve problems, the moment you solved the problem there is amazing 
-                    feeling that you feel.
-                </p>
-            </div>  
-        </div>
-        
-    </section>
+
+    <div id="bg">
+        <div id="greet">hi, i'm mintesnot bezabhi.</div> 
+     </div>
+    <div id="intro">
+        <p>I'm web developer, android developer, and passionate
+            about helping people become more capable and productive
+        </p>
+    </div>
              
-    <section id="memory">
-        <div class="title">
-            <h2>unforgetable moments</h2>
-            <div class="hor_bar"></div>
+    <section class="row" id="memory">
+        <div class="description col-lg-6">
+            <h2 class="title">unforgetable moments</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsum non
+                cupiditate quam, nobis possimus atque velit vitae quidem dolorem minus nam, nisi, 
+                aliquam deserunt qui quo eligendi maiores doloremque?
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto ipsum non
+                cupiditate quam, nobis possimus atque velit vitae quidem dolorem minus nam, nisi, 
+                aliquam deserunt qui quo eligendi maiores doloremque?
+            </p>
         </div>
-        <div class="description">
-            <p>The best moments, that are unforgetable for the rest of my life</p>
-        </div>
-        <div id="moment" class="carousel slide my-4" data-ride="carousel">
+
+        <div id="moment" class="carousel slide my-4 col-lg-6" data-ride="carousel">
 
             <ul class="carousel-indicators">
                 <li data-target="#moment" data-slide-to="0" class="active"></li>
@@ -129,10 +147,6 @@
             </div>
 
         </div>
-
-        <div id="link">
-            <a href="moments.html">click for more</a>
-        </div>
     </section>
        
     
@@ -140,7 +154,6 @@
         
             <div class="title">
                 <h2>hobbies and interest</h2>
-                <div class="hor_bar"></div>
             </div>
             
             <div class="row text-center" >
@@ -218,76 +231,31 @@
         
     </section>
 
-    <section id="contact">   
-        <div class="row">
-            <div class="col-md-6">
-                <div class="title">
-                    <h2>contact</h2>
-                    <div class="hor_bar"></div>
-                </div>
-                <p>
-                    If you have any comments or suggestion you can use the form on the right side. 
-                    Feel free to ask or give suggestion on the website. If you like to meet in person first email 
-                    me using email address found in the bottom of the webpage.
-                </p>
-            </div>
-    
-                
-            <form class="col-md-6">
-                <div class="form-group">
-                    <label for="fname">First Name:</label>
-                    <input class="form-control" type="text" name="fname" placeholder="Enter first name" required pattern="[A-Za-z].{1,}">
-                </div>
-                <div class="form-group">
-                    <label for="lname">Last Name:</label>
-                    <input class="form-control" type="text" name="lname" placeholder="Enter last name" required pattern="251+[0-9]{9}">
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input class="form-control" type="email" name="email" id="mail" required pattern="[a-zA-Z0-9.-+*/]+@[a-z0-9.-]+\.[a-z]{2,}">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number:</label>
-                    <input class="form-control" type="number" name="phone" id="number" required>
-                </div>
-                <div class="form-group">
-                    <label for="country">Country:</label>
-                    <select class="form-control" name="country" id="country">
-                        <option value="Ethiopia">Ethiopia</option>
-                        <option value="USA">USA</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="suggestion">Suggestion:</label>
-                    <textarea class="form-control" name="suggestion" id="suggest" rows="10"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-    
-    
-            </form>
-        </div>
-    </section>
 
-    <footer>
-        <div>
-            <a href="index.html#about">
-                <img src="images/up.png" alt="return to top">
-            </a>
+    <footer>  
+        <div class="footer_top container">
+            <p>Subscribe to my newsletter</p>
+            <form class="mt-4 " >
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control mx-2">
+                    <div class="mx-2">
+                      <button class="btn btn-primary" type="button">subscribe</button>
+                    </div>
+                    
+                  </div>
+            </form>
+            <p>Unsubscribe at any time, it won’t even hurt my feelings because I have none.</p>
+        </div>   
+
+        <div class="footer_bottom row">
+            <div class="col-lg-3 col-6 copyright"> &copy; Mintesnot Bezabhi 2021</div>
+            <div class="col-lg-9 col-6">              
+                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=homepage" target="blank" class="mx-4"><i class="fab fa-linkedin fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://twitter.com/share?url=homepage" target="_blank" class="mx-4"><i class="fab fa-twitter fa-2x" style="color:white !important;"></i></a> 
+                <a href="https://telegram.me/@MINtaa911" target="_blank" class="mx-4"><i class="fab fa-telegram fa-2x" style="color:white !important;"></i></a>   
+            </div>  
         </div>
-        <div>
-            <span><i class="fas fa-phone-alt"></i></span>
-            <span>(+251) 92431-6299</span>
-        </div>
-        <div>
-            <span><i class="far fa-envelope"></i></span>
-            <span>mintesnotbezabhi99@gmail.com</span>
-        </div>
-        <div>
-            <p>@copy 2020 Mintesnot Bezabhi</p>
-            <p>
-                This is version 2 of my personal website  .<a href="https://mintaa911.github.io/Assignment3/" target="_blank" rel="noopener noreferrer">V1</a>
-            </p>
-        </div>
+          
     </footer>
 
 
